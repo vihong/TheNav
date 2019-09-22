@@ -6,7 +6,7 @@
 
 html, body{
     overflow-x: hidden;
-    // position: fixed;
+    // position: relative;
 }
 
 
@@ -66,9 +66,7 @@ html, body{
 }
 
 
-.nav-active2{
-    background-color: pink;
-}
+
 
 .nav-active{
     transform: translateX(0%); // BUG : on clique sur le burger mais "la classe n'est pas ajoutée"

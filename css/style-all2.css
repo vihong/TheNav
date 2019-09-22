@@ -83,10 +83,6 @@ html, body {
   transition: 0.3s ease-in;
 }
 
-.nav-active2 {
-  background-color: pink;
-}
-
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
