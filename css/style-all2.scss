@@ -70,10 +70,10 @@ html, body{
     background-color: pink;
 }
 
-// .nav-active{
-//     transform: translateX(0%);
-//     background-color: yellow;
-// }
+.nav-active{
+    transform: translateX(0%); // BUG : on clique sur le burger mais "la classe n'est pas ajoutée"
+    background-color: yellow; //test de debug avec un changement de bgc de green à yellow : ça ne marche pas :(
+}
 
 @keyframes navLinkFade{
     from{

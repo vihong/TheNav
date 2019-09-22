@@ -87,6 +87,12 @@ html, body {
   background-color: pink;
 }
 
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background-color: yellow;
+}
+
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
