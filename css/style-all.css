@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightcoral;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  position: fixed;
+}
+
+img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .nav {
+  background-color: #5d4954;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .nav-logo a {
+  color: lightgrey;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+
+.header .nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  padding-left: 0;
+}
+
+.header .nav .nav-links li {
+  list-style-type: none;
+}
+
+.header .nav .nav-links li a {
+  text-decoration: none;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.nav-links {
+  background-color: #5d4954;
+  color: black;
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.nav-links li {
+  opacity: 0;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+/*# sourceMappingURL=style-all.css.map */
