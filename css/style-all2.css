@@ -83,10 +83,9 @@ html, body {
   transition: 0.3s ease-in;
 }
 
-.nav-active {
+.nav .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  background-color: yellow;
 }
 
 @-webkit-keyframes navLinkFade {

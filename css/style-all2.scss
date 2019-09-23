@@ -9,7 +9,6 @@ html, body{
     // position: relative;
 }
 
-
 .nav {
     background-color: grey; //gris our le nav bg
     display: flex;
@@ -66,11 +65,9 @@ html, body{
 }
 
 
-
-
-.nav-active{
-    transform: translateX(0%); // BUG : on clique sur le burger mais "la classe n'est pas ajoutée"
-    background-color: yellow; //test de debug avec un changement de bgc de green à yellow : ça ne marche pas :(
+.nav .nav-active{
+    transform: translateX(0%) ;
+    // background-color: yellow; 
 }
 
 @keyframes navLinkFade{
